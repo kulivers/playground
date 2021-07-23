@@ -1,7 +1,11 @@
 .width-100{
-    background-color: blue;
+    background-color: lightblue;
     width: 100%;
     margin-left: 100px;
 
 }
-.width-auto{}
+.width-auto{
+    background-color: lightcoral;
+    width: auto;
+    margin-left: 100px;
+}
