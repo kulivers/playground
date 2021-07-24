@@ -7,19 +7,10 @@ import Paper from '@material-ui/core/Paper';
 const WidthAuto = (props) => {
     const {history, match, location} = props
 
-    console.log('history', history)
-    console.log('match', match)
-    console.log('location', location)
-    console.log('-----------------')
-
-
     return (
         <div>
             <>
-                <Link to="/">
-                    <button>go back</button>
-                </Link>
-                <br/>
+
                 <Link to={`${match.path}/width-100`}> width 100%</Link>
                 <Link to={`${match.path}/width-auto`}> width-auto</Link>
             </>

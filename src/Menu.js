@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 import React, {useEffect} from 'react';
 
 
-const playgroundsArr = [
+const cssPlaygroundsArr = [
     {
         text: 'width-100-auto-difference',
         link: '/width-100-auto-difference'
@@ -15,7 +15,6 @@ const playgroundsArr = [
         text: 'test',
         link: '/test'
     }
-
 ]
 
 
@@ -50,15 +49,13 @@ function Menu() {
             <Grid item className={classes.column}>
                 <Grid container className={classes.column} spacing={2}>
                     <Typography variant={'h5'} align={'center'}>CSS</Typography>
-                    {playgroundsArr.map((item, index) => (
+                    {cssPlaygroundsArr.map((item, index) => (
 
                             <Grid item className={classes.item} key={index}>
                                 <Paper className={classes.paper}>
                                     <Link to={item.link}>{item.text}</Link>
                                 </Paper>
                             </Grid>
-
-
                         )
                     )
                     }
