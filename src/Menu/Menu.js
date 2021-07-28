@@ -1,20 +1,8 @@
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import { Typography } from "@material-ui/core";
-import Paper from "@material-ui/core/Paper";
-import { Link } from "react-router-dom";
-import React, { useEffect } from "react";
-
-export const cssPlaygroundsArr = [
-  {
-    text: "width-100-auto-difference",
-    link: "/width-100-auto-difference",
-  },
-  {
-    text: "test",
-    link: "/test",
-  },
-];
+import React from "react";
+import CssColumn from "./CssColumn";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -45,28 +33,13 @@ function Menu() {
   return (
     <Grid container className={classes.root} spacing={2}>
       <Grid item className={classes.column}>
-        <Grid container className={classes.column} spacing={2}>
-          <Typography variant={"h5"} align={"center"}>
-            CSS
-          </Typography>
-          {cssPlaygroundsArr.map((item, index) => (
-            <Grid item className={classes.item} key={index}>
-              <Paper className={classes.paper}>
-                <Link to={item.link}>{item.text}</Link>
-              </Paper>
-            </Grid>
-          ))}
-        </Grid>
+        <CssColumn />
       </Grid>
       <Grid item className={classes.column}>
-        <Typography variant={"h5"} align={"center"}>
-          React
-        </Typography>
+        empty
       </Grid>
       <Grid item className={classes.column}>
-        <Typography variant={"h5"} align={"center"}>
-          Redux
-        </Typography>
+        empty
       </Grid>
     </Grid>
   );

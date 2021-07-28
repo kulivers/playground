@@ -1,10 +1,8 @@
-import WidthAuto from "./css/width-auto/width-auto";
 import { BrowserRouter, Link, Route } from "react-router-dom";
 import React from "react";
-import Menu from "./Menu";
-
+import Menu from "./Menu/Menu";
+import Router from "./Router";
 import Button from "@material-ui/core/Button";
-import { cssPlaygroundsArr } from "./Menu";
 
 const App = () => {
   return (
@@ -25,8 +23,7 @@ const App = () => {
         }
       />
       <hr />
-
-      <Route path="/width-100-auto-difference" component={WidthAuto} />
+      <Router />
     </BrowserRouter>
   );
 };
