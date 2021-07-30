@@ -4,6 +4,8 @@ import Paper from "@material-ui/core/Paper";
 import { Link } from "react-router-dom";
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import { cssPlaygrounds } from "./Router";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -27,14 +29,6 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
   },
 }));
-
-
-export const cssPlaygrounds = [
-  {
-    text: "width-100-auto-difference",
-    link: "/width-100-auto-difference",
-  },
-];
 
 const CssLinksColumn = () => {
   const classes = useStyles();

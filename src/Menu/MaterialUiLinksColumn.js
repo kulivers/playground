@@ -4,7 +4,7 @@ import Paper from "@material-ui/core/Paper";
 import { Link } from "react-router-dom";
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { materialUIPlaygroundsArr } from "./Router";
+import { materialUIPlaygrounds } from "./Router";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,7 +35,7 @@ const CssColumn = () => {
         <Typography variant={"h5"} align={"center"}>
           Material-ui
         </Typography>
-        {materialUIPlaygroundsArr.map((item, index) => (
+        {materialUIPlaygrounds.map((item, index) => (
           <Grid item className={classes.item} key={index}>
             <Paper className={classes.paper}>
               <Link to={`/material-ui${item.link}`}>{item.text}</Link>
