@@ -1,8 +1,9 @@
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import { Typography } from "@material-ui/core";
 import React from "react";
-import CssColumn from "./CssColumn";
+import CssLinksColumn from "./CssLinksColumn";
+import MaterialUiColumn from "./MaterialUiLinksColumn";
+import ReactLinksColumn from "./ReactLinksColumn";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,21 +29,21 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Menu() {
+function Index() {
   const classes = useStyles();
   return (
     <Grid container className={classes.root} spacing={2}>
       <Grid item className={classes.column}>
-        <CssColumn />
+        <CssLinksColumn />
       </Grid>
       <Grid item className={classes.column}>
-        empty
+        <MaterialUiColumn />
       </Grid>
       <Grid item className={classes.column}>
-        empty
+        <ReactLinksColumn />
       </Grid>
     </Grid>
   );
 }
 
-export default Menu;
+export default Index;

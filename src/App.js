@@ -1,13 +1,13 @@
 import { BrowserRouter, Link, Route } from "react-router-dom";
 import React from "react";
-import Menu from "./Menu/Menu";
-import Router from "./Router";
+import Index from "./Menu";
+import Router from "./Menu/Router";
 import Button from "@material-ui/core/Button";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Route exact path="/" component={Menu} />
+      <Route exact path="/" component={Index} />
       <Route
         path="/*"
         render={({ match }) =>
