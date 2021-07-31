@@ -1,1 +1,1 @@
-export { GridTesting } from "./grid";
+export { FixedContainer } from "./FixedContainer";

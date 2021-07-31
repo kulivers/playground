@@ -1,22 +1,27 @@
 import React from "react";
 import { Route, withRouter } from "react-router-dom";
-import WidthAuto from "../css";
-import { GridTesting } from "../MaterialUI";
+import { FlexGrowShrinkBasis, WidthAuto100 } from "../css";
+import { FixedContainer } from "../MaterialUI";
 import DinamicComponentName from "../React";
 
 export const cssPlaygrounds = [
   {
     text: "width-100-auto-difference",
     link: "/width-100-auto-difference",
-    component: WidthAuto,
+    component: WidthAuto100,
+  },
+  {
+    text: "flex grow+shrink+basis",
+    link: "/flex-grow-shrink-basis",
+    component: FlexGrowShrinkBasis,
   },
 ];
 
 export const materialUIPlaygrounds = [
   {
-    text: "grid",
-    link: "/grid",
-    component: GridTesting,
+    text: "Fixed container",
+    link: "/fixedContainer",
+    component: FixedContainer,
   },
 ];
 export const reactPlaygrounds = [

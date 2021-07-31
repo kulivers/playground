@@ -37,4 +37,4 @@ const WidthAuto = ({ match, ...props }) => {
     </div>
   );
 };
-export default withRouter(WidthAuto);
+export const WidthAuto100 = withRouter(WidthAuto);
