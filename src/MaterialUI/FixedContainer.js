@@ -11,8 +11,6 @@ import ImageListItem from "@material-ui/core/ImageListItem";
 import ImageListItemBar from "@material-ui/core/ImageListItemBar";
 import { createTheme, makeStyles } from "@material-ui/core/styles";
 
-const theme = createTheme();
-
 const useStyles = makeStyles({
   root: {
     color: (props) => props.color,

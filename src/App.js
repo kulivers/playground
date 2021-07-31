@@ -7,6 +7,7 @@ import Button from "@material-ui/core/Button";
 const App = () => {
   return (
     <BrowserRouter>
+      make resizer and flexGrowShrinkBasis
       <Route exact path="/" component={Index} />
       <Route
         path="/*"

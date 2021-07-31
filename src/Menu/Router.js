@@ -2,7 +2,7 @@ import React from "react";
 import { Route, withRouter } from "react-router-dom";
 import { FlexGrowShrinkBasis, WidthAuto100 } from "../css";
 import { FixedContainer } from "../MaterialUI";
-import DinamicComponentName from "../React";
+import DinamicComponentName, { Resizer } from "../React";
 
 export const cssPlaygrounds = [
   {
@@ -29,6 +29,11 @@ export const reactPlaygrounds = [
     text: "Dinamic Component Name",
     link: "/DinamicComponentName",
     component: DinamicComponentName,
+  },
+  {
+    text: "Resizer",
+    link: "/Resizer",
+    component: Resizer,
   },
 ];
 
